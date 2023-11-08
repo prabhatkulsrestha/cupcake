@@ -1,0 +1,130 @@
+/* Reset some default styles for the page */
+body {
+    background-image: url('background.gif'); /* Replace 'background.gif' with your GIF file */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Background video styles */
+
+/* Anniversary container style */
+/* Anniversary container styled as a gift card */
+.anniversary-container {
+    position: relative;
+    background: linear-gradient(135deg, #e0ded6bb, #deff66b6);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 2000px;
+    height: 1000px;
+    margin-top: 100px ;
+
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Cursive', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.anniversary-message {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #f71fa4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+#countup-timer {
+    font-size: 36px;
+    color: #ff6600;
+    animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+#celebrate-button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    animation: heartbeat 2s infinite;
+}
+
+#celebrate-button:hover {
+    background-color: #f06;
+}
+
+/* Celebration effect background */
+#celebration-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Celebration animations */
+.fireworks {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ffcc00;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: firework-rise 2s linear;
+}
+
+@keyframes firework-rise {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-100px) scale(0.8); opacity: 0; }
+}
+
+.balloon {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background: #ffcc00;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: balloon-rise 10s infinite linear;
+}
+
+@keyframes balloon-rise {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-500px); }
+}
+
+.romantic-quote {
+    font-family: 'Cursive', cursive;
+    color: #ffcc00;
+    font-size: 18px;
+}
+
+/* Audio styles */
+#celebration-audio {
+    display: none;
+}
